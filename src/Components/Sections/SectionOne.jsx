@@ -24,7 +24,6 @@ export const SectionOne = ()=>{
                 display="flex"
                 flexDir="column"
                 alignItems="center"
-                justifyContent='center'
                 gap="30px"
             >
                 <Image
