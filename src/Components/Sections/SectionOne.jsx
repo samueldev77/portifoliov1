@@ -6,10 +6,10 @@ import Person from '../../assets/Images/samuel.jpg'
 export const SectionOne = ()=>{
     const h = useBreakpointValue({base:'90%', md:'80%', lg:'90%', xl:'100%'})
     const widthText = useBreakpointValue({base:'100%', md:'80%', lg:'50%', xl:'50%'})
-    const margin = useBreakpointValue({base:'15%', md:'5%', lg:'3%'})
-    const direction = margin == '15%' ? 'column' : 'inline-blocl'
+    const margin = useBreakpointValue({base:'20%', md:'5%', lg:'3%'})
+    const direction = margin == '20%' ? 'column' : 'inline-blocl'
     return (
-        <BoxSection bgColor="dark.100" height="100vh">
+        <BoxSection bgColor="dark.100" minH='100vh'>
             <Image
                 w={h}
                 h={h}
@@ -32,7 +32,7 @@ export const SectionOne = ()=>{
                     border="solid 2px"
                     borderColor='blueGradient.100'
                     src={Person}
-                    boxSize="clamp(140px, 15vw, 150px)"
+                    boxSize="clamp(150px, 15vw, 150px)"
                     borderRadius="100%"
                 />
                 <Box>
@@ -40,7 +40,7 @@ export const SectionOne = ()=>{
                         textAlign="center"
                         color="textColor.100"
                         fontWeight="600"
-                        fontSize="clamp(1.3rem, 2.8vw, 3vw)"
+                        fontSize="clamp(1.5rem, 2.8vw, 3.2vw)"
                     >
                         Eu crio sites incríveis
                     </Heading>
@@ -48,13 +48,13 @@ export const SectionOne = ()=>{
                         textAlign="center"
                         color="textColor.100"
                         fontWeight="600"
-                        fontSize="clamp(1.3rem, 2.8vw, 3vw)"
+                        fontSize="clamp(1.5rem, 2.8vw, 3.2vw)"
                     >
                         e amo minhas criações!
                     </Heading>
                 </Box>
                 <Box w={widthText}>
-                    <Text color='textColor.200' textAlign='center' fontSize="clamp(0.8rem, 1vw, 2vw)" fontWeight='200'>
+                    <Text color='textColor.200' textAlign='center' fontSize="clamp(1rem, 1vw, 2vw)" fontWeight='200'>
                         Sou desenvolvedor front end, Graduando em Análise e desenvolvimento de sistemas. Crio interfaces responsivas e intuitivas
                         utilizando React js, com boas práticas e padrões de projeto. 
                     </Text>
