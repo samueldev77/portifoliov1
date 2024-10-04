@@ -4,12 +4,12 @@ import BlueCircle from '../../assets/Images/blueCircle.png'
 import Person from '../../assets/Images/samuel.jpg'
 
 export const SectionOne = ()=>{
-    const h = useBreakpointValue({base:'90%', md:'80%', lg:'90%', xl:'100%'})
+    const h = useBreakpointValue({base:'90vw', md:'35rem', lg:'45rem', xl:'50rem'})
     const widthText = useBreakpointValue({base:'100%', md:'80%', lg:'50%', xl:'50%'})
     const margin = useBreakpointValue({base:'20%', md:'5%', lg:'3%'})
     const direction = margin == '20%' ? 'column' : 'inline-blocl'
     return (
-        <BoxSection bgColor="dark.100" minH='100vh'>
+        <BoxSection id='inicio' bgColor="dark.100" minH='100vh'>
             <Image
                 w={h}
                 h={h}
@@ -18,6 +18,7 @@ export const SectionOne = ()=>{
                 transform="translate(-50%, -25%)"
                 objectFit="contain"
                 src={BlueCircle}
+                alt="circulo azul"
             />
             <Box
                 w="100%"
@@ -34,6 +35,7 @@ export const SectionOne = ()=>{
                     src={Person}
                     boxSize="clamp(150px, 15vw, 150px)"
                     borderRadius="100%"
+                    alt="Pessoa programadora"
                 />
                 <Box>
                     <Heading
@@ -61,7 +63,7 @@ export const SectionOne = ()=>{
                 </Box>
                 <Box w='100%' mt='30px' color='textColor.100' display='flex' flexDirection={direction} gap='20px' justifyContent='center'>
                     <Button variant='solid' fontWeight='400' fontSize='1rem' borderRadius='2xl' p='20px'
-                     >Estou apenas olhando</Button>
+                     >Sou tech recruiter</Button>
                     <Button variant='outline' colorScheme="white" fontWeight='400' fontSize='1rem' borderRadius='2xl' p='20px' >Preciso de um projeto</Button>
                 </Box>
             </Box>

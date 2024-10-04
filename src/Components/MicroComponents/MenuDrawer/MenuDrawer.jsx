@@ -7,6 +7,7 @@ import {
   } from '@chakra-ui/react'
 import Hamburguer from './MenuHamburguer'
 import React, { useState, useEffect } from 'react';
+import {links} from '../Header';
 
 export const MenuDrawer = (props)=>{
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -27,10 +28,11 @@ export const MenuDrawer = (props)=>{
                 <DrawerContent p='5% 0px' bgColor='rgba(6,9,15,0.4)' backdropFilter="blur(5px)" marginTop='10vh' borderBottom='solid 1px'>
                     <DrawerBody>
                         <Box display='flex' flexDirection='column' gap='30px' color='white' textAlign='center'>
-                            <Link _hover={{color:'text.100', opacity:'80%'}} onClick={handleClose} textDecoration='none' href="#inicio" fontWeight='200' fontSize='1.2rem'>Inicio</Link>
-                            <Link _hover={{color:'text.100', opacity:'80%'}} onClick={handleClose} textDecoration='none' href="#projetos" fontWeight='200' fontSize='1.2rem'>Projetos</Link>
-                            <Link _hover={{color:'text.100', opacity:'80%'}} onClick={handleClose} textDecoration='none' href="#experiencia" fontWeight='200' fontSize='1.2rem'>Experiência</Link>
-                            <Link _hover={{color:'text.100', opacity:'80%'}} onClick={handleClose} mb='30px'textDecoration='none' href="#contato" fontWeight='200' fontSize='1.2rem'>Contato</Link>
+                            {links.map((link, key)=>{
+                                return(
+                                    <Link key={key} _hover={{color:'blueGradient.100'}} onClick={handleClose} textDecoration='none' href={link.href} fontWeight='300' fontSize='1.05rem'>{link.text}</Link>
+                                )
+                            })}
                         </Box>
                     </DrawerBody>
                 </DrawerContent>

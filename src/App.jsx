@@ -6,6 +6,7 @@ import HomePage from "./Pages/Home.jsx";
 const colors = {
     dark: {
         100: "#06090F",
+        200:'#151B26'
     },
     textColor: {
         100: "white",
