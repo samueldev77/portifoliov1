@@ -1,12 +1,12 @@
 import { BoxSection } from "../MicroComponents/BoxSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Projeto1 from "../../assets/Images/devFinance.png";
-import Projeto2 from "../../assets/Images/working.png";
+import Projeto2 from "../../assets/Images/melhorFlix.png";
 import CardProject from "../MicroComponents/CardProject";
 
 const contentCards = [
     { tittle: "Dev Finance $", subtittle: "Clique aqui para ver o projeto", image: Projeto1, link: 'https://devfinance1.netlify.app' },
-    { tittle: "Projeto em produção", subtittle: "Indisponível no momento", image: Projeto2, link: '' }
+    { tittle: "Melhor Flix", subtittle: "Clique aqui para ver o projeto", image: Projeto2, link:'https://melhorflix.netlify.app' }
     
 ];
 
