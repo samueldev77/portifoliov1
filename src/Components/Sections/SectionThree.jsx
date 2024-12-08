@@ -2,12 +2,13 @@ import { BoxSection } from "../MicroComponents/BoxSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Projeto1 from "../../assets/Images/devFinance.png";
 import Projeto2 from "../../assets/Images/melhorFlix.png";
+import Working from '../../assets/Images/Working.png'
 import CardProject from "../MicroComponents/CardProject";
 
 const contentCards = [
     { tittle: "Dev Finance $", subtittle: "Clique aqui para ver o projeto", image: Projeto1, link: 'https://devfinance1.netlify.app' },
-    { tittle: "Melhor Flix", subtittle: "Clique aqui para ver o projeto", image: Projeto2, link:'https://melhorflix.netlify.app' }
-    
+    { tittle: "Melhor Flix", subtittle: "Clique aqui para ver o projeto", image: Projeto2, link:'https://melhorflix.netlify.app' },
+    { tittle: "Samuel Fotografia", subtittle: "Projeto ainda em produção", image: Working, link: '' },
 ];
 
 export const SectionThree = () => {
@@ -29,7 +30,7 @@ export const SectionThree = () => {
                         Projetos
                     </Heading>
                 </Box>
-                <Box w="100%" display="flex" justifyContent="center" gap="5%" rowGap='30px' flexWrap='wrap'>
+                <Box w="100%" display="flex" justifyContent="center" gap="2%" rowGap='30px' flexWrap='wrap'>
                     {contentCards.map((project, id) => {
                         return (
                             <CardProject

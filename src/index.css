@@ -7,3 +7,9 @@
 html{
   scroll-behavior: smooth;
 }
+.orangeGradient{
+  background: linear-gradient(to bottom, #FF8660, #D5491D);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+}
