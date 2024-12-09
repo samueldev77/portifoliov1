@@ -1,4 +1,4 @@
-import { Heading,  Image, Box, useBreakpointValue,Text, Button, Link} from "@chakra-ui/react"
+import { Heading,  Image, Box, useBreakpointValue,Text, Button, Link, useToast} from "@chakra-ui/react"
 import { BoxSection} from "../MicroComponents/BoxSection"
 import BlueCircle from '../../assets/Images/blueCircle.png'
 import Person from '../../assets/Images/samuel.jpg'
@@ -8,6 +8,17 @@ export const SectionOne = ()=>{
     const widthText = useBreakpointValue({base:'100%', md:'80%', lg:'50%', xl:'50%'})
     const margin = useBreakpointValue({base:'20%', md:'5%', lg:'3%'})
     const direction = margin == '20%' ? 'column' : 'inline-blocl'
+    const toast = useToast()
+    const handleClick = ()=>{
+        toast({
+            title: 'Desculpe, o blog ainda não está pronto',
+            description: "Obrigado pela visita",
+            status: 'info',
+            duration: 5000,
+            isClosable: true,
+            position:'top-right'
+        })
+    }
     return (
         <BoxSection id='inicio' bgColor="dark.100" minH='100vh'>
             <Image
@@ -62,7 +73,7 @@ export const SectionOne = ()=>{
                     </Text>
                 </Box>
                 <Box w='100%' mt='30px' color='textColor.100' display='flex' flexDirection={direction} gap='20px' justifyContent='center'>
-                    <Button variant='solid' minW='200px' fontWeight='400' fontSize='1rem' borderRadius='2xl' p='20px'
+                    <Button onClick={handleClick} variant='solid' minW='200px' fontWeight='400' fontSize='1rem' borderRadius='2xl' p='20px'
                      >Acessar Blog</Button>
                     <Button variant='outline' minW='200px' colorScheme="white" fontWeight='400' fontSize='1rem' borderRadius='2xl' p='20px' >
                         <Link _hover={{textDecor:'none'}} href="#contato">Contate-me</Link>

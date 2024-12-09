@@ -1,4 +1,5 @@
 import Header from "../Components/MicroComponents/Header"
+import SectionFive from "../Components/Sections/SectionFive"
 import SectionFour from "../Components/Sections/SectionFour"
 import { SectionOne } from "../Components/Sections/SectionOne"
 import SectionThree from "../Components/Sections/SectionThree"
@@ -12,6 +13,7 @@ export const HomePage = ()=>{
             <SectionTwo/>
             <SectionThree/>
             <SectionFour/>
+            <SectionFive/>
         </>
     )
 }
