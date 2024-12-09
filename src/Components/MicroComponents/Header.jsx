@@ -5,7 +5,7 @@ import MenuDrawer from "../MicroComponents/MenuDrawer/MenuDrawer"
 export const links = [
     {text: 'Inicio', href: '#inicio'},
     {text: 'Projetos', href: '#projetos'},
-    {text: 'Eperiencia', href: '#experiencia'},
+    {text: 'Experiência', href: '#experiencia'},
     {text: 'Contato', href: '#contato'},
     {text: 'Blog', href: '#inicio'},
 ]

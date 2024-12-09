@@ -11,9 +11,8 @@ const social = [
     {name:'github', icon: GithubIcon, link: 'https://github.com/Samael7735'},
 ]
 
-const Texto = `Obrigado por visitar e conhecer um pouco das minhas habilidades. O intuito deste site é apresentar de forma simples
-    e rápida um resumo das minhas habilidades como desenvolvedor front end. Em um futuro próximo espero poder contribuir com
-    a comunidade dev com o meu blog, aprimorar, absorver e compartilhar conhecimento
+const Texto = `Obrigado por visitar e conhecer um pouco das minhas habilidades. Fique a vontade para entrar em contato comigo
+    sugerir melhorias, discutir ideias e compartilhar conhecimento.
 `
 
 export const SectionFive = ()=>{

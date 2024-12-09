@@ -13,7 +13,7 @@ const experiencia = [
 
 export const SectionFour = ()=>{
     return(
-        <BoxSection id='experiencia' bgColor="dark.100">
+        <BoxSection id='experiencia' bgColor="dark.100" aos="fade-right" aosOffset={10}>
             <Box w='100%' textAlign='center' mb='3rem'>
                 <Heading className="orangeGradient" fontSize="clamp(2.5rem, 2.9vw, 3.2vw)">Experiência</Heading>
             </Box>

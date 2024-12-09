@@ -24,7 +24,7 @@ export const SectionTwo = ()=>{
     const boxSizing = 'clamp(3.5rem, 4.5vw, 5rem)'
     return(
         <BoxSection bgColor="dark.100">
-            <Box display='grid' placeItems='center' gap='5%'>
+            <Box data-aos="fade-right" display='grid' placeItems='center' gap='5%'>
                 <Box>
                     <Heading fontWeight='200' fontSize="clamp(1.6rem, 2.1vw, 3vw)" color='textColor.100' textAlign='center' mb='25px'>Experiência com as tecnologias</Heading>
                     <Box display='flex' justifyContent='center' gap='30px' padding='30px 0px' flexWrap='wrap'>

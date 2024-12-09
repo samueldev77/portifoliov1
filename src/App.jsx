@@ -1,7 +1,10 @@
 import React from "react";
+import { useEffect } from "react";
 import "./index.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import HomePage from "./Pages/Home.jsx";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const colors = {
     dark: {
@@ -21,6 +24,9 @@ const colors = {
 const theme = extendTheme({ colors });
 
 const App = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
     return (
         <ChakraProvider theme={theme}>
             <React.StrictMode>

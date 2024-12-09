@@ -32,6 +32,7 @@ export const SectionOne = ()=>{
                 alt="circulo azul"
             />
             <Box
+                className="fade-in-bottom"
                 w="100%"
                 display="flex"
                 flexDir="column"
