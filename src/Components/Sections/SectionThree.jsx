@@ -2,7 +2,7 @@ import { BoxSection } from "../MicroComponents/BoxSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Projeto1 from "../../assets/Images/devFinance.png";
 import Projeto2 from "../../assets/Images/melhorFlix.png";
-import Working from '../../assets/Images/Working.png'
+import Working from '../../assets/Images/working.png'
 import CardProject from "../MicroComponents/CardProject";
 
 const contentCards = [
