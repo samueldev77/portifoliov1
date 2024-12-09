@@ -13,7 +13,7 @@ const contentCards = [
 
 export const SectionThree = () => {
     return (
-        <BoxSection id='projetos' bgColor="dark.100" aos="fade-up">
+        <BoxSection id='projetos' bgColor="dark.100" aos="fade-up" aosOffset={10}>
             <Box
                 w="100%"
                 display="flex"
